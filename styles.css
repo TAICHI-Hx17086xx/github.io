@@ -1,0 +1,263 @@
+html{
+  font-size:100%;
+}
+body{
+  color:#333;
+  font-size:1rem;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+a{
+  color:#333;
+  text-decoration:none;
+}
+img{
+  max-width:100%;
+  height: auto;
+}
+li{
+  list-style:none;
+}
+.wrapper{
+  max-width:1200px;
+  padding:0 16px;
+  margin:0 auto;
+}
+.readmpreBtn{
+  font-size:0.875rem;
+  text-align:center;
+}
+
+.readmpreBtn a{
+  padding-bottom: 1px;
+  color: #333;
+  position:relative;
+}
+.readmpreBtn a::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+.readmpreBtn a:hover::after{
+  opacity:0;
+  transform:translateY(3px);
+}
+
+#header{
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+}
+#header .mainTit{
+  padding:20px 16px;
+  
+}
+
+#header .mainTit a { 
+  display: inline-block;
+}
+#header .nav{
+  background:#333;
+}
+#header .headerMenu{
+   display:flex;
+  justify-content:flex-start;
+  align-items:center;
+}
+#header .menuItem{
+  font-size:0.875rem;
+  padding:10px 60px 10px 0px;
+}
+#header .menuItem a{
+  color:#fff;
+}
+.pickup {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+.pickup article{
+  width:32%;
+}
+.pickup .aritcleTit{
+  font-size:1rem;
+  margin:10px 0px 15px 0px;
+}
+#mainSec{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+main{
+  width: 65%;
+}
+main article{
+  margin-bottom: 80px;
+}
+main .aritcleTit{
+  text-align: left;
+  font-size :1.5rem;
+  margin: 10px 0 15px 0;
+}
+main ul{
+  display:flex;
+  justify-self:flex-start;
+  margin-bottom:10px;
+}
+main li{
+  margin-right: 20px;
+  font-size:0.875rem;
+}
+main .articleTxt{
+  padding:10px 30px;
+  font-size: 1rem;
+}
+
+aside {
+  width: 33%;
+  padding: 20px;
+}
+
+aside h3{
+  font-size:1.125rem;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+#profile{
+  text-align: center;
+  margin-bottom:60px;
+}
+#profile img{
+  width:130px;
+  height:auto;
+  border-radius: 50%;
+  margin-bottom:20px;
+}
+#profile .authorText{
+  font-size:0.875rem;
+  text-align: left;
+}
+#Ranking{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#Ranking article{
+  margin-bottom: 30px;
+}
+#Ranking h4{
+  text-align: left;
+  font-size:0.875rem;
+  font-weight: normal;
+}
+#Archive{
+  text-align: center;
+  margin-bottom:60px;
+}
+#Archive ul{
+  border-top:solid 1px #777;
+  text-align: left;
+}
+#Archive li {
+  font-size: 0.875rem;
+  border-top: solid  1px #777;
+  padding: 20px;
+  text-align: left;
+}
+#Archive li:first-child {
+  border-top:none;
+}
+#fotter{
+  font-size:0.875rem;
+  background:#f7f7f7;;
+}
+#fotter .content{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#fotter .items{
+  width:30%;
+}
+#fotter h3{
+  font-size:1.2rem;
+  margin-bottom:20px;
+  font-weight: bold;
+}
+#fotter .aboutArea p{
+  font-size:0.875rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#fotter .aboutArea .AboutItem{
+  margin-bottom: 10px;
+  position:relative;
+  padding-left: 12px;
+  color: #333;
+}
+#fotter .aboutArea .AboutItem::before{
+  content:"";
+  width:0;
+  height:0;
+ border-style:solid;
+ border-width:6px 0 6px 8px;
+ border-color:transparent transparent transparent #333;
+ position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+#fotter .MenuList{
+  font-size:1rem;
+  border-bottom:solid 1px #777;
+}
+#fotter .MenuList > li{
+  border-top: solid  1px #777;
+  padding: 15px;
+  text-align: left;
+}
+#fotter .copyright{
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.750rem;
+}
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+
+.nav{
+  overflow-x: scroll;
+}
+.pickup{
+  flex-direction:column;
+  padding-top:140px;
+}
+.pickup article {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#mainSec{
+  flex-direction:column;
+}
+main{
+  width:100%;
+}
+aside{
+  width:100%;
+  padding:0;
+}
+#fotter .content {
+  flex-direction: column;
+}
+#fotter .items {
+  width: 100%;
+  margin-bottom: 30px;
+}
+}
